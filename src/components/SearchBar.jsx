@@ -1,10 +1,11 @@
 import React from 'react';
 
 const SearchBar = () => {
+  const handleChange = (event) =>{
+    event.currentTarget.value
+  }
   return (
-    <div>
-
-    </div>
+    <input type="text" className="form-search form-control" placeholder="Type that pokemon!" onChange={handleChange}/>
   );
 };
 
