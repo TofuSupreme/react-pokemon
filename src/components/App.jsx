@@ -7,7 +7,9 @@ const App = () => {
     <div>
       <div className="left-scene">
         <SearchBar />
+        <div className="selected-pokemon">
         <Pokemon />
+        </div>
         </div>
         <div className="right-scene">
           <PokemonList pokemon="Pikachu, I choose you!"/>
