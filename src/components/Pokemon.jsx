@@ -4,7 +4,7 @@ const Pokemon = (props) => {
   const { pokeId } = props;
   const url = `https://img.pokemondb.net/artwork/${pokeId}.jpg`;
   return (
-      <img src={url} alt="pokemon" className="pokemon" />
+    <img src={url} alt="pokemon" className="pokemon" />
   );
 };
 

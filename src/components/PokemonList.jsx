@@ -1,12 +1,16 @@
 import React from 'react';
+import Pokemon from './Pokemon';
 
-const PokemonList = (props) => {
-  const { pokemon } = props
+const PokemonList = () => {
   return (
     <div className="pokemon-list">
-      {pokemon}
-      </div>
+      <Pokemon pokeId="pichu" />
+      <Pokemon pokeId="raichu" />
+      <Pokemon pokeId="charmander" />
+      <Pokemon pokeId="ninetales" />
+      <Pokemon pokeId="vulpix" />
+    </div>
   );
-  };
+};
 
 export default PokemonList;

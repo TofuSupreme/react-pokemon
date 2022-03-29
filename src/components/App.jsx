@@ -3,20 +3,23 @@ import Pokemon from './Pokemon';
 import PokemonList from './PokemonList';
 import SearchBar from './SearchBar';
 
+import Pokedex from 'pokedex-promise-v2';
+
+
 const App = () => {
+  const P = new Pokedex();
+
   return (
     <div>
       <div className="left-scene">
         <SearchBar />
         <div className="selected-pokemon">
-        <Pokemon  />
+          <Pokemon pokeId="pikachu" />
         </div>
-        </div>
-        <div className="right-scene">
-          <PokemonList pokemon="Pikachu, I choose you!"/>
-          <PokemonList pokemon="Pikachu, I choose you!"/>
-          <PokemonList pokemon="Pikachu, I choose you!"/>
-          </div>
+      </div>
+      <div className="right-scene">
+        <PokemonList />
+      </div>
     </div>
   );
 };
