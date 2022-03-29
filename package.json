@@ -27,6 +27,8 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "pokedex": "^1.1.0",
+    "pokedex-promise-v2": "^4.0.0",
     "react": "16.2",
     "react-dom": "16.2"
   },
