@@ -1,15 +1,13 @@
 import React from 'react';
-import Pokedex from 'pokedex-promise-v2';
 import Pokemon from './Pokemon';
 import PokemonList from './PokemonList';
 import SearchBar from './SearchBar';
 
-const P = new Pokedex();
+const Pokedex = require('pokedex');
 
 const App = () => {
-  const pokeSearch = P.getPokemonSpeciesByName("pikachu");
-
-
+  const P = new Pokedex();
+  console.log(P.pokemon('pikachu'));
   return (
     <div>
       <div className="left-scene">
@@ -19,7 +17,6 @@ const App = () => {
         </div>
       </div>
       <div className="right-scene">
-        <PokemonList pokeSearch={pokeSearch} />
         <PokemonList />
       </div>
     </div>
